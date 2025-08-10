@@ -15,7 +15,7 @@ function startBot() {
   bot.on('spawn', async () => {
     // Find a nearby door block (wooden or iron door)
     const doorBlock = bot.findBlock({
-      matching: (block) => block && (block.name === 'wooden_door' || block.name === 'iron_door'),
+      matching: (block) => block && (block.name === 'oak_door' || block.name === 'spruce_door' || block.name === 'birch_door' || block.name === 'jungle_door' || block.name === 'acacia_door' || block.name === 'dark_oak_door'),
       maxDistance: 32
     });
     if (doorBlock) {
