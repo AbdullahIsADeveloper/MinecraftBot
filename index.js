@@ -14,7 +14,7 @@ function startBot() {
 
   bot.on('spawn', () => {
     setInterval(() => {
-      bot.activateItem();
+      bot.simpleClick.rightMouse(2)
     }, 200);
   });
 
