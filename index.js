@@ -17,6 +17,5 @@ bot.on('spawn', () => {
 });
 
 http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Bot is running\n');
+  console.log(req);
 }).listen(process.env.PORT || 3000);
