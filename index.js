@@ -17,5 +17,5 @@ bot.on('spawn', () => {
 });
 
 http.createServer((req, res) => {
-  console.log(req);
+  console.log("Bot is running");
 }).listen(process.env.PORT || 3000);
