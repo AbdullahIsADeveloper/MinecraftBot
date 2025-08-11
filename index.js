@@ -11,12 +11,6 @@ function startBot() {
     auth: 'offline',
     version: '1.21.4'
   });
-
-  bot.on('end', () => {
-    setTimeout(() => {
-      startBot();
-    }, 1000);
-  });
 }
 
 startBot();
