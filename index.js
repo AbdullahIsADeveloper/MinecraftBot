@@ -16,9 +16,6 @@ async function startBot() {
 startBot();
 
 http.createServer((req, res) => {
-  if (!bot.player) {
-    startBot();
-  }
   console.log("Bot is running");
   res.end();
 }).listen(process.env.PORT || 3000);
