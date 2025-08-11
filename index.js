@@ -3,7 +3,7 @@ const http = require('http');
 
 let bot;
 
-function startBot() {
+async function startBot() {
   bot = mineflayer.createBot({
     host: 'bemincollege.aternos.me',
     port: 26191,
