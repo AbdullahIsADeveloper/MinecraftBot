@@ -12,14 +12,6 @@ async function startBot() {
     version: "1.21.4",
   });
 
-  const mineflayer = require("mineflayer");
-
-  const bot = mineflayer.createBot({
-    host: "localhost", // Replace with your server IP or hostname
-    port: 25565, // Replace with your server port
-    username: "TrapdoorBot",
-  });
-
   bot.on("spawn", () => {
     const block = bot.findBlock({
       matching: bot.registry.blocksByName.oak_trapdoor.id,
